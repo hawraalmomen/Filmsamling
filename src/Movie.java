@@ -7,7 +7,7 @@ public class Movie {
     private double lengthInMinutes;
     private String genre;
 
-    //Parametre
+    //Konstruktør
     public Movie(String title, String director, int yearCreated, boolean isInColor, double lengthInMinutes, String genre) {
         this.title = title;
         this.director = director;
@@ -15,25 +15,24 @@ public class Movie {
         this.isInColor = isInColor;
         this.lengthInMinutes = lengthInMinutes;
         this.genre = genre;
-        //*Override /toString
-        @Override
-        public String toString() {
-            return(title, director, yearCreated, isInColor,lengthInMinutes, genre);
-        }
-
-
-
-
 
     }
+    //Getter-metoden
 
     public String getTitle() {
         return title;
+    }
 
+    public void setTitle(String newTitle) {
+        this.title = newTitle;
     }
 
     public String getDirector() {
         return director;
+    }
+
+    public void setDirector(String newDirector) {
+        this.director = newDirector;
     }
 
     public int getYearCreated() {
@@ -41,8 +40,18 @@ public class Movie {
 
     }
 
-    public boolean isInColor() {
+    public void setYearCreated(int newYearCreated) {
+        this.yearCreated = newYearCreated;
+
+    }
+
+    public boolean IsInColor() {
         return isInColor;
+
+    }
+
+    public void setIsInColor(boolean newIsInColor) {
+            this.isInColor = newIsInColor;
 
     }
 
@@ -51,8 +60,17 @@ public class Movie {
 
     }
 
-    public String getGenre() {
-        return genre;
+    public void setLengthInMinutes(double newLengthMinutes) {
+        this.lengthInMinutes = newLengthMinutes;
     }
 
+    public String getGenre() {
+        return genre;
+
+    }
+
+    public void setGenre(String newGenre) {
+        this.genre = newGenre;
+    }
 }
+

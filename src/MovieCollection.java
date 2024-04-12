@@ -1,10 +1,14 @@
+import java.util.ArrayList;
+
 public class MovieCollection {
+
+    private ArrayList<Movie> moviedata = new ArrayList<>();
 
     private Movie[] collection;
     int count = 0;
 
-    public Movie() {
-        this.collection = Movie[3];
+    public MovieCollection() {
+        this.collection = new Movie[5];
 
     }
 
